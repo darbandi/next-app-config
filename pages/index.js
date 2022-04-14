@@ -1,5 +1,6 @@
 function HomePage({ meetups }) {
   console.log('meetups', meetups);
+
   return <>hello</>;
 }
 
