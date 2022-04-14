@@ -44,7 +44,6 @@ module.exports = {
         'translation',
         'security',
         'changeset',
-        'prettier',
       ],
     ],
   },
