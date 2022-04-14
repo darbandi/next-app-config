@@ -1,11 +1,6 @@
-
 function HomePage({ meetups }) {
   console.log('meetups', meetups);
-  return (
-    <>
-    hello
-    </>
-  );
+  return <>hello</>;
 }
 
 export default HomePage;
