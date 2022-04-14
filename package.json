@@ -1,0 +1,27 @@
+{
+  "name": "next-app",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "mongodb": "4.5.0",
+    "mongoose": "6.2.11",
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5",
+    "prettier": "2.6.2",
+    "husky": "7.0.4",
+    "@commitlint/config-conventional": "16.2.1",
+    "@commitlint/cli": "16.2.3"
+  }
+}
