@@ -33,12 +33,16 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+```bash
 .nvmrc
 .npmrc
 
 npx husky install
-npx husky add .husky/pre-commit "yarn lint"
-npx husky add .husky/pre-push "yarn build"
+npx husky add .husky/pre-commit "npm run lint"
+npx husky add .husky/pre-push "npm run build"
+npx husky add .husky/commit-msg "npx --no -- commitlint --edit ''"
 
 yarn add -D @commitlint/config-conventional @commitlint/cli
-npx husky add .husky/commit-msg
+npx sb init --builder webpack5
+npx sb init -f
+```
