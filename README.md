@@ -45,4 +45,7 @@ npx husky add .husky/commit-msg "npx --no -- commitlint --edit ''"
 yarn add -D @commitlint/config-conventional @commitlint/cli
 npx sb init --builder webpack5
 npx sb init -f
+
+yarn add -D tailwindcss postcss autoprefixer @storybook/addon-postcss storybook-css-modules-preset storybook-addon-next-router
+npx tailwindcss init -p
 ```
