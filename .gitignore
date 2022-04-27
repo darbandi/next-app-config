@@ -37,3 +37,6 @@ yarn-error.log*
 
 # docs
 README.beta.md
+
+# Local Netlify folder
+.netlify
