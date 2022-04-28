@@ -1,26 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
 import Search from '../components/utility/search/Search';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
   const { locale } = useRouter();
-
-  useEffect(() => {
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker
-        .register('/sw.js')
-        .then((registration) => {
-          console.log('registration success:', registration);
-        })
-        .catch((error) => {
-          console.warn('registration error:', error);
-        });
-    }
-  }, []);
 
   return (
     <section className="flex flex-col items-center gap-y-5 mt-12 sm:mt-36">
