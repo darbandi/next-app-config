@@ -1,5 +1,5 @@
-import { SessionProvider } from 'next-auth/react';
 import * as NextImage from 'next/image';
+import { AuthProvider } from '../state/auth/AuthContext';
 import '../styles/globals.css';
 
 const BREAKPOINTS_INT = {
@@ -36,9 +36,9 @@ Object.defineProperty(NextImage, 'default', {
 
 export const decorators = [
   (Story) => (
-    <SessionProvider session={null}>
+    <AuthProvider session={null}>
       <Story />
-    </SessionProvider>
+    </AuthProvider>
   ),
 ];
 

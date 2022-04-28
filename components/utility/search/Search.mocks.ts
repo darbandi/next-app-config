@@ -1,8 +1,6 @@
 import { ISearch } from './Search';
 
-const base: ISearch = {
-  sampleTextProp: 'Hello world!',
-};
+const base: ISearch = {};
 
 export const mockSearchProps = {
   base,
