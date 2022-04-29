@@ -13,8 +13,8 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
         <Link href="/">
           <a className="hover:underline">Home</a>
         </Link>
-        <Link href="/">
-          <a className="hover:underline">Store</a>
+        <Link href="/push-notification">
+          <a className="hover:underline">Push Notification</a>
         </Link>
       </div>
       <div className="space-x-5 m-5">
