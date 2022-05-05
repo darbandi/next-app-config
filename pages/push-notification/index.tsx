@@ -28,6 +28,7 @@ const PushNotification: NextPageWithLayout<IPushNotification> = () => {
   return (
     <>
       <form className="mt-8 space-y-6 w-128" onSubmit={handleSubmit}>
+        {/* {JSON.stringify(subscription, null, 2)} */}
         <input type="hidden" name="remember" value="true" />
         <div className="rounded-md shadow-sm -space-y-px">
           <div>

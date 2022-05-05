@@ -1,4 +1,4 @@
-const cacheName = 'v8';
+const cacheName = 'v15';
 
 // call install event
 self.addEventListener('install', () => {});
@@ -22,21 +22,22 @@ self.addEventListener('activate', (e) => {
 
 // call fetch event
 self.addEventListener('fetch', (e) => {
-  console.log('fetching');
-
-  e.respondWith(
-    fetch(e.request)
-      .then((res) => {
-        // make copy/clone of response
-        const resClone = res.clone();
-        caches.open(cacheName).then((cache) => {
-          // add the response to the cache
-          cache.put(e.request, resClone);
-        });
-        return res;
-      })
-      .catch(() => caches.match(e.request).then((res) => res))
-  );
+  if (!e.request.url.startsWith('http')) {
+    console.log('fetching');
+    e.respondWith(
+      fetch(e.request)
+        .then((res) => {
+          // make copy/clone of response
+          const resClone = res.clone();
+          caches.open(cacheName).then((cache) => {
+            // add the response to the cache
+            cache.put(e.request, resClone);
+          });
+          return res;
+        })
+        .catch(() => caches.match(e.request).then((res) => res))
+    );
+  }
 });
 
 self.addEventListener('push', (e) => {

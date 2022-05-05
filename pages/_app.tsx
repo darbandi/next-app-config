@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-        .register('/sw_cashed_site.js')
+        .register('/sw_cashed_site.js', { scope: '/' })
         .then((registration) => {
           try {
             getSubscription(registration);
