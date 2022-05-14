@@ -20,7 +20,7 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({
       </Head>
       <div className={classNames('min-h-screen flex flex-col', justify)}>
         <Header />
-        <main className="px-5">{children}</main>
+        <main className="px-5 flex justify-center w-full">{children}</main>
         <div className="m-auto" />
         <Footer />
       </div>
