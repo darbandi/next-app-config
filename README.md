@@ -1,6 +1,6 @@
 # Live Demo
 
-https://darbandi-next-js.netlify.app/
+https://next-js-sample.netlify.app/
 
 ## Used
 
