@@ -22,6 +22,7 @@ const Search: React.FC<ISearch> = () => {
         className="rounded-full border-2 w-5/6 sm:w-128 h-12 px-3"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
+        placeholder="e.g. dog | cat"
       />
       <div className="space-x-3">
         <button type="submit" className="btn-primary">

@@ -14,9 +14,12 @@ export const getServerSideProps: GetServerSideProps<IResults> = async ({
 }) => {
   let searchResults: IApiSearchResponseData = [];
   const searchTerm = query.search;
+  const URL = !process.env.production
+    ? 'http://localhost:3000'
+    : 'https://next-js-sample.netlify.app';
 
   if (searchTerm && searchTerm.length > 0) {
-    const response = await fetch(`http://localhost:3000/api/search`, {
+    const response = await fetch(`${URL}/api/search`, {
       body: JSON.stringify({ searchTerm }),
       headers: {
         'Content-Type': 'application/json',
