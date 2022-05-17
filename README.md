@@ -23,7 +23,7 @@ git clone https://github.com/darbandi/next-app-config.git
 
 2. Install dependencies using Yarn
 ```bash
-cd recoil-todo-list
+cd next-app-config
 yarn
 ```
 
