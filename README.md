@@ -14,6 +14,25 @@ https://next-js-sample.netlify.app/
 - Eslint
 - Husky
 
+## To get started
+
+1. Clone the repo
+```bash
+git clone https://github.com/darbandi/next-app-config.git
+```
+
+2. Install dependencies using Yarn
+```bash
+cd recoil-todo-list
+yarn
+```
+
+3. Start the development server
+```bash
+yarn start
+```
+
+## More commands you should know
 ```bash
 npx husky install
 npx husky add .husky/pre-commit "npm run lint"
