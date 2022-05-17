@@ -1,6 +1,7 @@
 # Live Demo
 
 https://next-js-sample.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d0d7eb68-fbb0-4d7e-a5cb-1109563c507a/deploy-status)](https://app.netlify.com/sites/next-js-sample/deploys)
 
 ## Used
 
